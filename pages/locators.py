@@ -20,3 +20,8 @@ class ProductPageLocators():
     PRODUCT_PRICE=(By.CSS_SELECTOR,"p.price_color")
     BASKET_PRICE=(By.CSS_SELECTOR,".in div > p:nth-child(1) > strong")
     SUCCESS_MESSAGE = (By.CSS_SELECTOR, "#messages div:nth-child(1)")
+
+class BasketPageLocators():
+    BASKET=(By.CSS_SELECTOR,".pull-right.hidden-xs > span > a")
+    ITEMS_TO_BUY=(By.CSS_SELECTOR,"h2.col-sm-6 ")
+    TEXT_EMPTY_BASKET=(By.CSS_SELECTOR,'#content_inner > p')

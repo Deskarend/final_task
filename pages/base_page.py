@@ -5,6 +5,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import math
 from .locators import BasePageLocators
+from .locators import BasketPageLocators
 
 class BasePage():
 
@@ -51,4 +52,8 @@ class BasePage():
             return True
 
         return False
+
+    def go_to_basket_page(self):
+        basket_button=self.browser.find_element(*BasketPageLocators.BASKET)
+        basket_button.click()
 
